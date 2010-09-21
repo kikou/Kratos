@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Kratos" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="../libKratos" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../../../../build/tmp/debug" />
+				<Option object_output="../../../../../../build/obj/debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGIMLETDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add directory="./../../../build/bin/debug" />
+				</Linker>
+			</Target>
+			<Target title="opt">
+				<Option output="../libKratos" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../../../../build/tmp/opt" />
+				<Option object_output="../../../../../../build/obj/opt" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="./../../../build/bin/opt" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fPIC" />
+			<Add directory="../../../../../../include" />
+			<Add directory="../../../../../../lib" />
+			<Add directory="../../../../../../include/Softimage_2010_SP1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sicppsdk" />
+			<Add library="sicoresdk" />
+			<Add library="snEssence" />
+			<Add directory="../../../../../lib" />
+			<Add directory="../../../../../../include/Softimage_2010_SP1/lib" />
+		</Linker>
+		<Unit filename="Kratos.cpp" />
+		<Unit filename="Kratos.h" />
+		<Unit filename="Thickness.cpp" />
+		<Unit filename="UniquePoints.cpp" />
+		<Unit filename="Voronoi.cpp" />
+		<Unit filename="snVoroCell.h" />
+		<Unit filename="snVoroConfig.h" />
+		<Unit filename="snVoroContainer.h" />
+		<Unit filename="snVoroMain.h" />
+		<Unit filename="snVoroWall.cpp" />
+		<Unit filename="snVoroWall.h" />
+		<Unit filename="snVoroWorklist.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

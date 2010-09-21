@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="debug" />
+	<File name="Kratos.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="15" />
+	</File>
+	<File name="UniquePoints.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4175" topLine="104" />
+	</File>
+	<File name="Voronoi.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="20535" topLine="614" />
+	</File>
+</CodeBlocks_layout_file>
